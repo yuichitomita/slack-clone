@@ -30,4 +30,8 @@ config :sling, Sling.Repo,
   hostname: "localhost",
   pool_size: 10
 
+# Configures Gurdian
+config: guardian, Guardian,
+  secret_key: "BGYPx5VpBzXn2vKGWEIh2OSNG0M23m1J9RUHzuLqJeygZCrhny2jOt4h8ILzcg/p"
+
 import_config "dev.secret.exs"
