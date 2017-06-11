@@ -26,7 +26,7 @@ config :logger, :console,
 config :guardian, Guardian,
   issuer: "Sling",
   ttl: {30, :days},
-  vertify_issuer: true,
+  verify_issuer: true,
   serializer: Sling.GuardianSerializer
 
 # Import environment specific config. This must remain at the bottom
