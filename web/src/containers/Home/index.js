@@ -33,17 +33,18 @@ class Home extends Component {
         {isAuthenticated &&
           <div>
             <span>{currentUser.username}</span>
-            <button type="button onClick={this.handleLogout}">Logout</button>
+            <button type="button" onClick={this.handleLogout}>Logout</button>
           </div>
         }
       </div>
     );
   }
 }
+
 export default connect(
   state => ({
     isAuthenticated: state.session.isAuthenticated,
     currentUser: state.session.currentUser,
   }),
-  { logout }
+  { logout },
 )(Home);
