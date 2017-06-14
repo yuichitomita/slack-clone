@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { BrowserRouter, Match, Miss } from 'react-router';
+import { BrowserRouter, Match, Miss } from 'react-router-dom';
 import Home from '../Home';
 import NotFound from '../../components/NotFound';
 import Login from '../Login';
