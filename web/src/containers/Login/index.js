@@ -9,7 +9,7 @@ type Props = {
   login: () => void,
 }
 
-clas Login extends Component {
+class Login extends Component {
   static contextTypes = {
     router: PropTypes.object,
   }
@@ -20,7 +20,7 @@ clas Login extends Component {
 
   render() {
     return (
-      <div style={{ flex: '1'}}>
+      <div style={{ flex: '1' }}>
         <Navbar />
         <LoginForm onSubmit={this.handleLogin} />
       </div>
