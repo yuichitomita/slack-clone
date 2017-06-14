@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { BrowserRouter, Match, Miss } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Home from '../Home';
 import NotFound from '../../components/NotFound';
 import Login from '../Login';
@@ -11,10 +11,10 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div style={{ display: 'flex', flex: '1' }}>
-          <Match exactly pattern="/" component={Home} />
-          <Match pattern="/login" component={Login} />
-          <Match pattern="/signup" component={Signup} />
-          <Miss component={NotFound} />
+          <Route path="/" component={Home} />
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={Signup} />
+          <Route component={NotFound} />
         </div>
       </BrowserRouter>
     );
