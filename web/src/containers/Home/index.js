@@ -28,7 +28,7 @@ class Home extends Component {
       <div style={{ flex: '1' }}>
         <Navbar />
         <ul>
-          <li><Link to="/login">Login</Link></li>
+          <li><Link to="/login">Log</Link></li>
           <li><Link to="/signup">Signup</Link></li>
         </ul>
         {isAuthenticated &&

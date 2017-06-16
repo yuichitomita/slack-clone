@@ -2,12 +2,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NotFound = () =>
+const NotFound = () => (
   <div style={{ margin: '2rem auto', textAlign: 'center' }}>
     <p>Page not found</p>
     <p>
       <Link to="/">"Go to home page"</Link>
     </p>
-  </div>;
+  </div>
+);
 
 export default NotFound;
