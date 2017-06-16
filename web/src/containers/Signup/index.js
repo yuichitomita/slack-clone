@@ -1,4 +1,5 @@
 // @flow
+// eslint-disable-next-line
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { signup } from '../../actions/session';
@@ -20,7 +21,7 @@ class Signup extends Component {
 
   render() {
     return (
-      <div style={{flex: '1'}}>
+      <div style={{ flex: '1' }}>
         <Navbar />
         <SignupForm onSubmit={this.handleSignup} />
       </div>
