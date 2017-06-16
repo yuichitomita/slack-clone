@@ -37,4 +37,5 @@ defmodule Sling.Endpoint do
     signing_salt: "45gx3Ykv"
 
   plug Sling.Router
+  plug CORSPlug
 end
